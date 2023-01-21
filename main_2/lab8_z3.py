@@ -7,3 +7,6 @@ print("Suma ziaren na szachownicy to " + str(sum) + ".")
 
 #ziarno ma 0,4mg
 print("Suma ziaren to " + str(sum*0.4/(10e9)) + " ton.")
+
+#szacunkowa roczna produkcja 782 mln ton (2022)
+print("Jest to " + str((sum*0.4/(10e9))/782e6) + " światowej rocznej produkcji.")
