@@ -1,20 +1,70 @@
-# jeżeli temperatura bedzie ujemna lub będzie pochmurno
-# to zostaniemy w domu, a jeżeli nie to pójdziemy na spacer
+a = 5
+b = 3
 
-temperature = -5
-is_sun_shining = False
+# koniunkcja bitowa
+print(a, "&", b, "=", a & b)
 
-if temperature < 0 or not is_sun_shining:
-    print("Zostajemy w domu")
-else:
-    print("Idziemy na spacer")
+# print(bin(a))
+# print(bin(b))
+print("{:08b}".format(a))
+print("{:08b}".format(b))
+print("-" * 8)
+print("{:08b}".format(a & b))
 
-# wyświetl cyfrę, chyba że ...
-# liczba parzysta lub liczba większa od 6 to wyświetli gwiazdkę
-for i in range(10):
-    if i > 6 or i % 2 == 0:
-        print("*", end=" ")
-    else:
-        print(i, end=" ")
+print("")
 
-#
+# alternatywa bitowa
+print(a, "|", b, "=", a | b)
+
+# print(bin(a))
+# print(bin(b))
+print("{:08b}".format(a))
+print("{:08b}".format(b))
+print("-" * 8)
+print("{:08b}".format(a | b))
+
+print()
+
+# xor
+print(a, "^", b, "=", a ^ b)
+
+# print(bin(a))
+# print(bin(b))
+print("{:08b}".format(a))
+print("{:08b}".format(b))
+print("-" * 8)
+print("{:08b}".format(a ^ b))
+
+print()
+
+# przesunięcie bitowe w prawo
+print(a, ">>", b, "=", a >> b)
+
+# print(bin(a))
+# print(bin(b))
+print("{:08b}".format(a))
+print("-" * 8)
+print("{:08b}".format(a >> b))
+
+print()
+
+# przesunięcie bitowe w lewo
+print(a, "<<", b, "=", a << b)
+
+# print(bin(a))
+# print(bin(b))
+print("{:08b}".format(a))
+print("-" * 8)
+print("{:08b}".format(a << b))
+
+print()
+
+# negacja bitowa
+print("~" + str(a), "=", a << b)
+
+
+print("{:08b}".format(a))
+print("-" * 8)
+print("{:08b}".format(~a))
+
+print(0b11111111)
