@@ -29,8 +29,8 @@ def interpreterBMI(BMI):
         return "wygłodzenie"
 
 
-height = int(input("Podaj swój wzrost w cm: "))
-weight = int(input("Podaj swoją wagę w kg: "))
+height = float(input("Podaj swój wzrost w cm: "))
+weight = float(input("Podaj swoją wagę w kg: "))
 
 print("Twoje BMI to ", bodyMassIndex(height, weight))
-print("Interpretacja Twojego wyniku: ", interpreterBMI(bodyMassIndex(height, weight)))
+print("Interpretacja Twojego wyniku:", interpreterBMI(bodyMassIndex(height, weight)))
