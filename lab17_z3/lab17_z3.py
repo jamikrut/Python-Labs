@@ -1,7 +1,6 @@
 import sys
 
 sys.path.append("C:\\Users\\Longer\\Desktop\\packages")
-
 from games import lotto
 
 print("Witaj w grze lotto!")
